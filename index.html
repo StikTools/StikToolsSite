@@ -22,34 +22,33 @@
         }
 
         header {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex; /* Added */
-    align-items: center; /* Added */
-    justify-content: space-between; /* Added */
-}
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #0071e3;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0071e3;
+        }
 
-nav ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    display: flex;
-    align-items: center; /* Added */
-    gap: 30px;
-}
-
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
 
         nav ul li a {
             color: #1c1c1e;
@@ -265,6 +264,15 @@ nav ul {
         a:hover {
             text-decoration: underline;
         }
+
+        /* Media Query for 2x2 button layout on mobile */
+        @media (max-width: 768px) {
+            #home .btn-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -284,70 +292,69 @@ nav ul {
 
     <!-- Home Section -->
     <section id="home">
-        <div class="container">
-            <h2>Welcome to StikTools</h2>
-            <p>Your all-in-one utility app for daily tasks.</p>
-            <div class="btn-container">
-                <a href="#features" class="btn">Explore Features</a>
-                <a href="privacy.html" class="btn btn-privacy">Privacy Policy</a>
-                <br>
-                <a href="https://testflight.apple.com/join/n7y77Avj" class="btn">Join the Testflight</a>
-                <a href="https://github.com/StikTools/StikTools" class="btn btn-privacy">View on Github</a>
+    <div class="container">
+        <h2>Welcome to StikTools</h2>
+        <p>Your all-in-one utility app for daily tasks.</p>
+        <div class="btn-container">
+            <a href="#features" class="btn">Explore Features</a>
+            <a href="privacy.html" class="btn btn-privacy">Privacy Policy</a>
+            <a href="https://testflight.apple.com/join/n7y77Avj" class="btn">Join the Testflight</a>
+            <a href="https://github.com/StikTools/StikTools" class="btn btn-privacy">View on Github</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features">
+    <div class="container">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Random Number Generator</h3>
+                <p>Generate random numbers for games, decisions, or just for fun!</p>
+            </div>
+            <div class="feature">
+                <h3>QRCode Generator</h3>
+                <p>Create custom QR codes for your links, text, or any data.</p>
+            </div>
+            <div class="feature">
+                <h3>Level Tool</h3>
+                <p>Use your device as a handy level tool to make sure everything is perfectly aligned.</p>
+            </div>
+            <div class="feature">
+                <h3>Flashlight</h3>
+                <p>Instant access to your device’s flashlight for emergencies.</p>
+            </div>
+            <div class="feature">
+                <h3>Counter</h3>
+                <p>Keep track of counts, whether it's reps, rounds, or anything else.</p>
+            </div>
+            <div class="feature">
+                <h3>Password Generator</h3>
+                <p>Generate secure passwords to keep your accounts safe.</p>
+            </div>
+            <div class="feature">
+                <h3>Whiteboard</h3>
+                <p>Draw, sketch, and jot down ideas with the simple whiteboard tool.</p>
+            </div>
+            <div class="feature">
+                <h3>College Planner</h3>
+                <p>Organize your academic schedule and tasks effortlessly.</p>
+            </div>
+            <div class="feature">
+                <h3>Expense Tracker</h3>
+                <p>Manage your finances with an easy-to-use expense tracker.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>Random Number Generator</h3>
-                    <p>Generate random numbers for games, decisions, or just for fun!</p>
-                </div>
-                <div class="feature">
-                    <h3>QRCode Generator</h3>
-                    <p>Create custom QR codes for your links, text, or any data.</p>
-                </div>
-                <div class="feature">
-                    <h3>Level Tool</h3>
-                    <p>Use your device as a handy level tool to make sure everything is perfectly aligned.</p>
-                </div>
-                <div class="feature">
-                    <h3>Flashlight</h3>
-                    <p>Instant access to your device’s flashlight for emergencies.</p>
-                </div>
-                <div class="feature">
-                    <h3>Counter</h3>
-                    <p>Keep track of counts, whether it's reps, rounds, or anything else.</p>
-                </div>
-                <div class="feature">
-                    <h3>Password Generator</h3>
-                    <p>Generate secure passwords to keep your accounts safe.</p>
-                </div>
-                <div class="feature">
-                    <h3>Whiteboard</h3>
-                    <p>Draw, sketch, and jot down ideas with the simple whiteboard tool.</p>
-                </div>
-                <div class="feature">
-                    <h3>College Planner</h3>
-                    <p>Organize your academic schedule and tasks effortlessly.</p>
-                </div>
-                <div class="feature">
-                    <h3>Expense Tracker</h3>
-                    <p>Manage your finances with an easy-to-use expense tracker.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-          <center><h1>Email: stephen@blustik.com</h1></center>
-        </div>
-    </section>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <center><h1>Email: stephen@blustik.com</h1></center>
+    </div>
+</section>
 </body>
 </html>
