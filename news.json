@@ -2,21 +2,11 @@
     {
         "id": "1f7e6d08-4a7d-4c5e-a4f4-0c96c2281d61",
         "title": "Welcome to StikTools!",
-        "subtitle": "Enjoy the app :)"
+        "subtitle": "Enjoy the app!"
     },
     {
         "id": "23bfb109-8a6e-4a98-91e5-3b5a12c9a0fd",
         "title": "New Update Available",
         "subtitle": "Version 1.1.0 is now live."
-    },
-    {
-        "id": "e01cbf6a-09c4-4f7b-9b30-4e3fd3d7e3ad",
-        "title": "StikTools - AI",
-        "subtitle": "Coming soon."
-    },
-    {
-        "id": "b2a1d5e6-4b6d-4c3d-a9b6-4c8c5d1e3a4b",
-        "title": "StikTools - College",
-        "subtitle": "Coming soon."
     }
 ]
