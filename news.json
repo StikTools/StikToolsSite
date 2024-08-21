@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1f7e6d08-4a7d-4c5e-a4f4-0c96c2281d61",
+        "title": "Welcome to StikTools!",
+        "subtitle": "Explore the latest tools and features we've added to make your experience even better."
+    },
+    {
+        "id": "23bfb109-8a6e-4a98-91e5-3b5a12c9a0fd",
+        "title": "New Update Available",
+        "subtitle": "Version 1.2.0 is now live. Check out the new Random Number Generator and improved Whiteboard features."
+    },
+    {
+        "id": "d7c3f4b5-4f6a-4e6e-8b0c-7f28b5b9a451",
+        "title": "Join Our Community",
+        "subtitle": "Connect with other users and share your feedback in our new Discord server."
+    },
+    {
+        "id": "a0d0c726-644f-4f8e-bb22-1a5b68a7858d",
+        "title": "Tips & Tricks",
+        "subtitle": "Get the most out of StikTools with our latest tips and tutorials."
+    },
+    {
+        "id": "e01cbf6a-09c4-4f7b-9b30-4e3fd3d7e3ad",
+        "title": "StikTools Pro",
+        "subtitle": "Unlock advanced features with StikTools Pro. Learn more about our new subscription plan."
+    }
+]
