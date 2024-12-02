@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - StikZIP</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f5f7 0%, #e0e0e5 100%);
+            color: #1c1c1e;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            max-width: 1200px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0071e3;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #1c1c1e;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1c1c1e;
+        }
+
+        #home {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1c1c1e 0%, #1c1c1e 100%);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #home h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        #home p {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #home .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        #home .btn,
+        #home .btn-privacy {
+            flex: 1;
+            text-align: center;
+            padding: 15px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #home .btn {
+            color: #1c1c1e;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #home .btn:hover {
+            background: #f0f0f5;
+            color: #1c1c1e;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        #home .btn-privacy {
+            background: none;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        #home .btn-privacy:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        #features {
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid #d1d1d6;
+        }
+
+        #features h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .feature {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1c1c1e;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #6e6e73;
+        }
+
+        #contact {
+            padding: 100px 0;
+            background: rgba(245, 245, 247, 0.8);
+            color: #1c1c1e;
+            border-top: 1px solid #d1d1d6;
+        }
+
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        #contact label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #d1d1d6;
+            border-radius: 15px;
+            background: rgba(245, 245, 247, 0.9);
+            font-size: 1rem;
+            color: #1c1c1e;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            outline: none;
+            border-color: #1c1c1e;
+            background: #ffffff;
+        }
+
+        #contact button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 25px;
+            background: #1c1c1e;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #contact button:hover {
+            background: #1c1c1e;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background: #1c1c1e;
+            color: #f5f5f7;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #1c1c1e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>StikTools Privacy Policy</h1>
+            <a href="index.html" class="btn-home">Home</a>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Section -->
+    <div id="privacy-content">
+        <div class="container">
+            <h2>Effective Date: 10/14/24</h2>
+
+            <h2>Your Privacy</h2>
+            <p>StikZIP respects your privacy. We don’t directly collect any personal data when you use our app.</p>
+
+            <h2>Data Collection</h2>
+            <p>StikZIP does not directly collect or store any personal information from its users.</p>
+
+            <h2>Policy Updates</h2>
+            <p>If we make changes to this policy, we’ll update it here. Please check back for any updates.</p>
+
+            <h2>Contact Us</h2>
+            <p>Questions? Reach out to us at <a href="mailto:support@stiktools.xyz">support@stiktools.xyz</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
